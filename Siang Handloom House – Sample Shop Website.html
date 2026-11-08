@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Siang Handloom House, Itanagar (Sample Website)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3f6f1;--surface:#ffffff;--ink:#14261c;--muted:#4d6155;--green:#1f4d3a;--gold:#e8a317;--red:#b3322b;--line:#d5ddd3;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101a14;--surface:#18271e;--ink:#eef3ec;--muted:#a5b5a9;--green:#7fc5a0;--gold:#f2b53a;--red:#e8746c;--line:#2a3d31}}
+:root[data-theme="dark"]{--bg:#101a14;--surface:#18271e;--ink:#eef3ec;--muted:#a5b5a9;--green:#7fc5a0;--gold:#f2b53a;--red:#e8746c;--line:#2a3d31}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Figtree',system-ui,sans-serif;line-height:1.6;font-size:17px}
+h1,h2,h3{font-family:'Bricolage Grotesque','Segoe UI',sans-serif;line-height:1.1;margin:0}
+.wrap{max-width:880px;margin:0 auto;padding:0 20px}
+.weave{height:56px;background:
+repeating-linear-gradient(90deg,var(--red) 0 24px,var(--gold) 24px 36px,var(--green) 36px 72px,var(--gold) 72px 84px);
+-webkit-mask:linear-gradient(180deg,#000 0 100%);
+border-bottom:6px solid var(--ink)}
+.weave.thin{height:18px;border-bottom-width:3px}
+header.hero{padding:44px 0 52px}
+.badge{display:inline-block;background:var(--gold);color:#14261c;font-weight:600;font-size:14px;padding:4px 12px;border-radius:99px;margin-bottom:18px}
+h1{font-size:clamp(40px,10vw,76px);font-weight:800;letter-spacing:-.02em;max-width:11ch}
+.lead{font-size:19px;color:var(--muted);max-width:34ch;margin:18px 0 26px}
+.btn{display:inline-block;background:var(--green);color:var(--bg);font-weight:600;text-decoration:none;padding:14px 22px;border-radius:10px}
+.btn:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.btn.alt{background:transparent;color:var(--ink);border:2px solid var(--ink);margin-left:8px}
+section{padding:40px 0}
+h2{font-size:clamp(28px,6vw,40px);margin-bottom:22px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(190px,1fr))}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.card .sw{height:110px}
+.card div.t{padding:14px 16px 18px}
+.card h3{font-size:20px;margin-bottom:4px}
+.card p{margin:0;color:var(--muted);font-size:15px}
+.price{font-weight:600;color:var(--ink);margin-top:8px!important}
+.s1{background:repeating-linear-gradient(45deg,var(--green) 0 10px,var(--gold) 10px 14px)}
+.s2{background:repeating-linear-gradient(90deg,var(--red) 0 14px,var(--surface) 14px 18px,var(--green) 18px 36px)}
+.s3{background:repeating-linear-gradient(0deg,var(--gold) 0 8px,var(--red) 8px 16px)}
+.s4{background:conic-gradient(from 45deg,var(--green) 0 25%,var(--gold) 0 50%,var(--red) 0 75%,var(--ink) 0);background-size:28px 28px}
+ol.steps{list-style:none;padding:0;margin:0;display:grid;gap:14px}
+ol.steps li{display:flex;gap:14px;align-items:flex-start;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px}
+ol.steps b{flex:none;width:34px;height:34px;border-radius:50%;background:var(--gold);color:#14261c;display:grid;place-items:center;font-family:'Bricolage Grotesque',sans-serif}
+.visit{background:var(--green);color:var(--bg);border-radius:18px;padding:28px}
+.visit h2{color:var(--bg)}
+.visit p{margin:6px 0}
+footer{padding:30px 0 40px;color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+<div class="weave" aria-hidden="true"></div>
+<header class="hero"><div class="wrap">
+<span class="badge">Sample website · Itanagar</span>
+<h1>Siang Handloom House</h1>
+<p class="lead">Handwoven jackets, stoles and bags from Arunachal. Order in one message.</p>
+<a class="btn" href="https://wa.me/910000000000?text=Hi%2C%20I%20want%20to%20order%20from%20Siang%20Handloom%20House">Order on WhatsApp</a>
+<a class="btn alt" href="#visit">Find the shop</a>
+</div></header>
+<div class="weave thin" aria-hidden="true"></div>
+
+<main class="wrap">
+<section>
+<h2>What we sell</h2>
+<div class="grid">
+<div class="card"><div class="sw s1"></div><div class="t"><h3>Handloom jacket</h3><p>Warm, hand-stitched, made to last.</p><p class="price">From ₹2,499</p></div></div>
+<div class="card"><div class="sw s2"></div><div class="t"><h3>Woven stole</h3><p>Soft cotton blend in local patterns.</p><p class="price">From ₹799</p></div></div>
+<div class="card"><div class="sw s3"></div><div class="t"><h3>Shoulder bag</h3><p>Strong weave for everyday use.</p><p class="price">From ₹999</p></div></div>
+<div class="card"><div class="sw s4"></div><div class="t"><h3>Gift set</h3><p>Stole and bag, wrapped for gifting.</p><p class="price">From ₹1,599</p></div></div>
+</div>
+</section>
+
+<section>
+<h2>How to order</h2>
+<ol class="steps">
+<li><b>1</b><span>Tap “Order on WhatsApp” and tell us what you like.</span></li>
+<li><b>2</b><span>We send photos and the final price.</span></li>
+<li><b>3</b><span>Pay by UPI. Pick up in Itanagar or get it delivered.</span></li>
+</ol>
+</section>
+
+<section id="visit">
+<div class="visit">
+<h2>Visit the shop</h2>
+<p>Your street address, Itanagar, Arunachal Pradesh</p>
+<p>Open every day, 10 AM to 8 PM</p>
+<p>Phone / WhatsApp: +91 00000 00000</p>
+</div>
+</section>
+</main>
+
+<footer><div class="wrap">This is a sample design. Your shop’s name, photos, prices and contact details go here. Website made by [Your Name], [Your phone].</div></footer>
+</body>
+</html>
